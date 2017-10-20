@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		146C475D1F9A9238007E0EF1 /* BellmanFord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 146C475B1F9A9238007E0EF1 /* BellmanFord.cpp */; };
 		67AFC2F61F8CAB2F0097DA80 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67AFC2F51F8CAB2F0097DA80 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		146C475B1F9A9238007E0EF1 /* BellmanFord.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BellmanFord.cpp; path = midTerm/BellmanFord.cpp; sourceTree = "<group>"; };
+		146C475C1F9A9238007E0EF1 /* BellmanFord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BellmanFord.h; path = midTerm/BellmanFord.h; sourceTree = "<group>"; };
 		67AA5BCC1F98720B00F0737C /* DFS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DFS.h; path = midTerm/DFS.h; sourceTree = "<group>"; };
 		67AFC2F21F8CAB2F0097DA80 /* midTerm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = midTerm; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AFC2F51F8CAB2F0097DA80 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -46,6 +49,8 @@
 		67AFC2E91F8CAB2E0097DA80 = {
 			isa = PBXGroup;
 			children = (
+				146C475B1F9A9238007E0EF1 /* BellmanFord.cpp */,
+				146C475C1F9A9238007E0EF1 /* BellmanFord.h */,
 				67AA5BCC1F98720B00F0737C /* DFS.h */,
 				67AFC3021F8CCE060097DA80 /* input.txt */,
 				67AFC3011F8CC9DA0097DA80 /* Graph.h */,
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				146C475D1F9A9238007E0EF1 /* BellmanFord.cpp in Sources */,
 				67AFC2F61F8CAB2F0097DA80 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
