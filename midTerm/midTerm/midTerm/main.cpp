@@ -22,23 +22,23 @@
 #include "Node.h"
 #include "Graph.h"
 #include "DFS.h"
+#include "BellmanFord.h"
 #include <iostream>
 using namespace std;
 
+void printAllNode(List* sListPtr, int sizeOfVertex);
+int* getMinDistanceUsingBellmanFord(List* weightListPtr, int sizeOfVertex, int numOftestVertex);
 
 int main(int argc, const char * argv[]) {
     
     int nVertex;
     int f, h, w;
     
-    freopen("/Users/Yoon/Desktop/17Fall/midTerm/midTerm/input.txt", "r", stdin);
-//    FILE* file = fopen("/Users/Yoon/Desktop/17Fall/midTerm/midTerm/input.txt", "r");
-//    fscanf(file, "%d", &nVertex);
-
+    freopen("input.txt", "r", stdin);
     scanf("%d", &nVertex);
     
     Node* boxes = new Node[nVertex+2];
-    Graph* g = new Graph(nVertex+2);
+    Graph* g = new Graph(nVertex+2); // -> why 2 instance should be created?
     int* rslt = new int(nVertex+2);
     
     
@@ -90,6 +90,16 @@ int main(int argc, const char * argv[]) {
         rslt[i] = 0;
     }
     
+    DEBUG_printAllNode_And_SetInfiniteValue(g->adjList, nVertex);
+    
+    int testVertex = 1;
+    int* minDistance = getMinDistanceUsingBellmanFord(g->adjList, nVertex, testVertex);
+
+    for(int i = 0 ; i <= nVertex ; i++){
+        printf("[%d] : %d\n", i, minDistance[i]);
+    }
+    
+    delete[] minDistance;
     
     
     return 0;
